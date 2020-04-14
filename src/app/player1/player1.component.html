@@ -1,0 +1,8 @@
+<button (click)="sendBall()">Player 1</button>
+<div *ngIf="display">
+    {{message}}
+</div>
+
+<hr>
+
+<app-player2 (messageEvent)="receiveMessage($event)" [childMessage]="parentMessage"></app-player2>
